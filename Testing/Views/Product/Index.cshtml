@@ -14,12 +14,12 @@
         @foreach (var product in @Model)
         {
         <tr>
-            <th>@product.ProductID</th>
-            <th>@product.Name</th>
-            <th>@product.Price</th>
-            <th>@product.CategoryID</th>
-            <th>@product.OnSale</th>
-            <th>@product.StockLevel</th>
+            <td><a href=/Product/ViewProduct/@product.ProductID>@product.ProductID</a></td>
+            <td>@product.Name</td>
+            <td>@product.Price</td>
+            <td>@product.CategoryID</td>
+            <td>@product.OnSale</td>
+            <td>@product.StockLevel</td>
         </tr>
         }
     </table>
