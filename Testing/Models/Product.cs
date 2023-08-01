@@ -1,4 +1,7 @@
-﻿namespace Testing.Models
+﻿using System.Collections;
+using System.Collections.Generic;
+
+namespace Testing.Models
 {
     public class Product
     {
@@ -9,6 +12,6 @@
         public bool OnSale { get; set; }
         public string Name { get; set; }
         public double Price { get; set; }
-
+        public IEnumerable<Category> Categories { get; set; }
     }
 }
